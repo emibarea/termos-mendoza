@@ -39,7 +39,11 @@ const Summary = () => {
         </div>
       </div>
       <Button className="w-full mt-6 bg-green-500">
-        <ReactWhatsapp number="+54 2613607756" message={sellMesagge}>
+        <ReactWhatsapp
+          number="+54 2613607756"
+          message={sellMesagge}
+          element="button"
+        >
           Pedir por Whatsapp
         </ReactWhatsapp>
       </Button>
