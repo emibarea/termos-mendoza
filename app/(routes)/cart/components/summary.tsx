@@ -40,7 +40,7 @@ const Summary = () => {
       </div>
       <Button className="w-full mt-6 bg-green-500">
         <ReactWhatsapp
-          number="+54 2613607756"
+          number="+54 9 2613 60-7775"
           message={sellMesagge}
           element="button"
         >

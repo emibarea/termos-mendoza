@@ -17,9 +17,9 @@ const Navbar = async () => {
           <div className="hidden sm:flex">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
-                src="https://o.remove.bg/downloads/52fb8247-7165-47e1-acf1-6e19ce75cb4e/DR_p-removebg-preview.png"
+                src="https://media.discordapp.net/attachments/1087185625658167420/1153779062825816125/DR_p__1_-removebg-preview_2.png"
                 alt="logo"
-                width={120}
+                width={170}
                 height={50}
               />
             </Link>
@@ -28,9 +28,9 @@ const Navbar = async () => {
           <div className="flex sm:hidden">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
-                src="https://o.remove.bg/downloads/52fb8247-7165-47e1-acf1-6e19ce75cb4e/DR_p-removebg-preview.png"
+                src="https://media.discordapp.net/attachments/1087185625658167420/1153779062825816125/DR_p__1_-removebg-preview_2.png"
                 alt="logo"
-                width={120}
+                width={170}
                 height={50}
               />
             </Link>
