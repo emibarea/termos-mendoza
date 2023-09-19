@@ -28,7 +28,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   return (
     <>
       <nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden sm:flex">
-        {routes?.map((route) => (
+        {routes?.map((route, idx) => (
           <Link
             href={route.href}
             key={route.href}
@@ -52,8 +52,8 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
               <NavbarActions />
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            {routes?.map((route) => (
-              <DropdownMenuItem>
+            {routes?.map((route, idx) => (
+              <DropdownMenuItem key={idx}>
                 <Link
                   href={route.href}
                   key={route.href}

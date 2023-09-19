@@ -1,10 +1,7 @@
+"use client";
 import Link from "next/link";
-import {
-  BiLogoFacebook,
-  BiLogoInstagram,
-  BiLogoTiktok,
-  BiLogoWhatsapp,
-} from "react-icons/bi";
+import ReactWhatsapp from "react-whatsapp";
+import { BiLogoInstagram, BiLogoTiktok, BiLogoWhatsapp } from "react-icons/bi";
 const SocialMedia = () => {
   return (
     <>
@@ -17,14 +14,23 @@ const SocialMedia = () => {
           <BiLogoInstagram className="w-6 h-6" />
           <p>dripdealers.arg</p>
         </Link>
-        <Link href="/" className="flex items-center hover:underline">
+        <Link
+          href="https://www.tiktok.com/@dripdealerx"
+          target="_blank"
+          className="flex items-center hover:underline"
+        >
           <BiLogoTiktok className="w-6 h-6" />
           <p>dripdealerx</p>
         </Link>
-        <Link href="/" className="flex items-center hover:underline">
+        <ReactWhatsapp
+          className="flex items-center hover:underline"
+          number="+54 9 2613 60-7775"
+          message="Hola! Queria hacer una consulta sobre..."
+          element="button"
+        >
           <BiLogoWhatsapp className="w-6 h-6" />
-          <p>2613607775</p>
-        </Link>
+          2613607775
+        </ReactWhatsapp>
       </div>
     </>
   );
