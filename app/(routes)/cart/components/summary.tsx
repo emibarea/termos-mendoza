@@ -6,6 +6,7 @@ import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
+import ReactWhatsapp from "react-whatsapp";
 const Summary = () => {
   const searchParams = useSearchParams();
   const items = useCart((state) => state.items);
@@ -15,16 +16,10 @@ const Summary = () => {
     return total + Number(item.price);
   }, 0);
 
-  const onCheckout = async () => {
-    const response = await axios.post(
-      `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
-      {
-        productIds: items.map((item) => item.id),
-      }
-    );
-    window.location = response.data.url;
-  };
-
+  const productos = items.map(
+    (item, idx) => `${idx + 1}_${item.name}. Precio: $${item.price}`
+  );
+  const sellMesagge = `${productos} || Precio Total:  $${totalPrice}`;
   useEffect(() => {
     if (searchParams.get("success")) {
       toast.success("Pago Confirmado");
@@ -43,8 +38,10 @@ const Summary = () => {
           <Currency value={totalPrice} />
         </div>
       </div>
-      <Button onClick={onCheckout} className="w-full mt-6">
-        Comprar
+      <Button className="w-full mt-6 bg-green-500">
+        <ReactWhatsapp number="+54 2613607756" message={sellMesagge}>
+          Pedir por Whatsapp
+        </ReactWhatsapp>
       </Button>
     </div>
   );
