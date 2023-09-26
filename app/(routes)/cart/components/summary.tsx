@@ -17,9 +17,10 @@ const Summary = () => {
   }, 0);
 
   const productos = items.map(
-    (item, idx) => `${idx + 1}_${item.name}. Precio: $${item.price}`
+    (item, idx) => `${idx + 1} _ ${item.name}. Precio: $${item.price}.\n`
   );
-  const sellMesagge = `${productos} || Precio Total:  $${totalPrice}`;
+  const sellMesagge = `${productos} \n Precio Total:  $${totalPrice}.`;
+
   useEffect(() => {
     if (searchParams.get("success")) {
       toast.success("Pago Confirmado");
@@ -44,7 +45,7 @@ const Summary = () => {
           message={sellMesagge}
           element="button"
         >
-          Pedir por Whatsapp
+          Comprar por Whatsapp
         </ReactWhatsapp>
       </Button>
     </div>

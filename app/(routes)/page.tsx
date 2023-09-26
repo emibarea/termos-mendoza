@@ -31,26 +31,28 @@ const HomePage = async () => {
 
   return (
     <Container>
-      {data.map((item, index) => (
-        <div key={index} className="space-y-10 pb-10">
-          <Billboard data={item.billboardData} />
-          <div className="flex flex-col gap-y-8 px-4 xm:px-6 lg:px-8">
-            <ProductList
-              title="Productos Disponibles"
-              items={item.productData}
-            />
+      <div className="mt-[80px]">
+        {data.map((item, index) => (
+          <div key={index} className="space-y-10 pb-10">
+            <Billboard data={item.billboardData} />
+            <div className="flex flex-col gap-y-8 px-4 xm:px-6 lg:px-8">
+              <ProductList
+                title="Productos Disponibles"
+                items={item.productData}
+              />
+            </div>
           </div>
+        ))}
+        <div className="flex flex-col items-center justify-center p-2 relative">
+          <Image
+            className="shadow-2xl rounded-2xl"
+            width={500}
+            height={300}
+            alt="logo"
+            src="https://media.discordapp.net/attachments/1087185625658167420/1153780805487820871/DR_p_2.png"
+          />
+          <SocialMedia />
         </div>
-      ))}
-      <div className="flex flex-col items-center justify-center p-2 relative">
-        <Image
-          className="shadow-2xl rounded-2xl"
-          width={500}
-          height={300}
-          alt="logo"
-          src="https://media.discordapp.net/attachments/1087185625658167420/1153780805487820871/DR_p_2.png"
-        />
-        <SocialMedia />
       </div>
     </Container>
   );

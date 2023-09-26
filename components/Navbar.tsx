@@ -11,9 +11,9 @@ export const revalidate = 0;
 const Navbar = async () => {
   const categories = await getCategories();
   return (
-    <div className="border-b">
+    <div className="border-b fixed top-0 left-0 right-0 z-50 h-[80px] bg-white shadow-xl">
       <Container>
-        <div className="relative flex justify-between px-4 sm:px-6 lg:px-8  h-16 items-center">
+        <div className="relative flex justify-between px-4 sm:px-6 lg:px-8 h-[80px] items-center">
           <div className="hidden sm:flex">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
