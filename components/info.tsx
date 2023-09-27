@@ -26,7 +26,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <div className="flex flex-col gap-y-6">
         <div className="flex itmes-center gap-x-4">
           <h3 className="font-semibold text-black">Talles:</h3>
-          <div>{data?.size?.name}</div>
+          <div>{data?.size?.value}</div>
         </div>
         <div className="flex itmes-center gap-x-4">
           <h3 className="font-semibold text-black">Color:</h3>
