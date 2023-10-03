@@ -28,7 +28,7 @@ const HomePage = async () => {
 
     data.push({ billboardData, productData });
   }
-
+  data.reverse();
   return (
     <Container>
       <div className="mt-[80px]">
