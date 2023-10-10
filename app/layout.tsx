@@ -19,9 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${font.className} bg-gradient-to-b from-white via-gray-200 to-white`}
-      >
+      <body className={`${font.className}`}>
         <ModalProvider />
         <ToastProvider />
         <Navbar />
