@@ -7,20 +7,20 @@ const SocialMedia = () => {
     <>
       <div className="flex mt-4 sm:space-y-0 items-left sm:items-center w-full sm:w-auto justify-around text-sm sm:text-lg sm:space-x-4 pb-4">
         <Link
-          href="https://www.instagram.com/dripdealers.arg/"
+          href="https://www.instagram.com/termosmendoza2/"
           target="_blank"
           className="flex items-center hover:underline"
         >
           <BiLogoInstagram className="w-6 h-6" />
-          <p>dripdealers.arg</p>
+          <p>termosmendoza2</p>
         </Link>
         <Link
-          href="https://www.tiktok.com/@dripdealerx"
+          href="https://www.tiktok.com/@termosmendoza?lang=es"
           target="_blank"
           className="flex items-center hover:underline"
         >
           <BiLogoTiktok className="w-6 h-6" />
-          <p>dripdealerx</p>
+          <p>termosmendoza</p>
         </Link>
         <ReactWhatsapp
           className="flex items-center hover:underline"
@@ -29,7 +29,7 @@ const SocialMedia = () => {
           element="button"
         >
           <BiLogoWhatsapp className="w-6 h-6" />
-          2613607775
+          2617092743
         </ReactWhatsapp>
       </div>
     </>
