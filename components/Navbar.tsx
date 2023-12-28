@@ -17,7 +17,7 @@ const Navbar = async () => {
           <div className="hidden sm:flex">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
-                src="https://media.discordapp.net/attachments/1087185625658167420/1156668262508150894/logodrip.png?ex=6515cec3&is=65147d43&hm=ff0258fe69977c965a548f4a86ae6c377d8df373cb45c32a07269bb297ed47f7&="
+                src="https://media.discordapp.net/attachments/1087185625658167420/1190073260386300025/WhatsApp_Image_2023-12-28_at_20.21.55.jpeg?ex=65a07917&is=658e0417&hm=2bcb844ca51286b05397bb30e46229936d18bbc5f0f65613337d353cca087f86&=&format=webp"
                 alt="logo"
                 width={170}
                 height={50}
@@ -28,7 +28,7 @@ const Navbar = async () => {
           <div className="flex sm:hidden">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
-                src="https://media.discordapp.net/attachments/1087185625658167420/1156668262508150894/logodrip.png?ex=6515cec3&is=65147d43&hm=ff0258fe69977c965a548f4a86ae6c377d8df373cb45c32a07269bb297ed47f7&="
+                src="https://media.discordapp.net/attachments/1087185625658167420/1190073260386300025/WhatsApp_Image_2023-12-28_at_20.21.55.jpeg?ex=65a07917&is=658e0417&hm=2bcb844ca51286b05397bb30e46229936d18bbc5f0f65613337d353cca087f86&=&format=webp"
                 alt="logo"
                 width={170}
                 height={50}
